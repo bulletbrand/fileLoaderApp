@@ -1,0 +1,18 @@
+//git init
+git init
+git add --all
+git commit -a -m 'first commit'
+git remote add origin https://github.com/user/project.git
+git pull --rebase origin master
+git push origin master
+
+//mongo db cluster create after sign up
+https://cloud.mongodb.com/v2/5febb2e92a29a262b005d048#clusters
+
+//server
+npm init
+npm i express mongoose config
+npm i -D nodemon //hot reload
+
+//client
+npx create react app
