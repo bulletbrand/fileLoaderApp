@@ -3,13 +3,19 @@ const mongoose = require("mongoose")
 const config = require("config")
 
 const app = express()
+const PORT = config.get('serverPort')
 
-const start = () => {
-    const port =
-
+const start = async () => {
     try {
-
-    } catch(e) {
-
+        await mongoose.connect(config.get("dbUrl"), {
+            userNewUrlParser: true,
+        })
+        app.listen(PORT, () => {
+            console.log('Server started on port', PORT)
+        })
+    } catch (e) {
+        console.log('Server error')
     }
 }
+
+start()
