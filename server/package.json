@@ -4,13 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "author": "Alexandr Matyka",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.0.0",
+    "bcryptjs": "^2.4.3",
     "config": "^3.3.3",
     "express": "^4.17.1",
+    "express-validator": "^6.9.0",
     "mongoose": "^5.11.9"
   },
   "devDependencies": {
