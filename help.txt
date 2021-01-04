@@ -13,6 +13,9 @@ https://cloud.mongodb.com/v2/5febb2e92a29a262b005d048#clusters
 npm init
 npm i express mongoose config
 npm i -D nodemon //hot reload
+npm i jsonwebtoken //for token auth
 
 //client
 npx create react app
+npm i redux react-redux redux-thunk
+npm i redux-devtools-extension
